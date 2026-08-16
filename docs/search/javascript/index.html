@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Search</title>
+  <style>
+    body {
+      width: 80%;
+      max-width: 900px;
+      margin: 40px auto;
+      color: #333;
+      font-family: Arial, sans-serif;
+    }
+
+    form {
+      margin: 25px 0;
+    }
+
+    input {
+      width: 60%;
+      padding: 10px;
+      border: 1px solid #aaa;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 11px 20px;
+      border: 0;
+      background-color: #198754;
+      color: white;
+      cursor: pointer;
+    }
+
+    .summary {
+      margin: 30px 0;
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+
+    .source {
+      margin-top: 35px;
+    }
+
+    .source h2 {
+      padding-bottom: 8px;
+      border-bottom: 2px solid #198754;
+      font-size: 21px;
+    }
+
+    .job {
+      padding: 15px 5px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .job h3 {
+      margin: 0 0 8px;
+      font-size: 17px;
+    }
+
+    .job p {
+      margin: 4px 0;
+      color: #666;
+      font-size: 14px;
+    }
+
+    a {
+      color: #0066cc;
+    }
+
+    .error {
+      color: #cc0000;
+    }
+  </style>
+</head>
+<body>
+  <h1>Job Search</h1>
+  <p>Berlin Startup Jobs, We Work Remotely, Web3 Career의 채용 공고를 검색합니다.</p>
+
+  <form
+    onsubmit="event.preventDefault(); window.location.href='/search/' + encodeURIComponent(this.term.value.toLowerCase().trim()) + '/';"
+  >
+    <input
+      type="text"
+      name="term"
+      value="javascript"
+      placeholder="python, javascript, java"
+      required
+    >
+    <button type="submit">검색</button>
+  </form>
+
+  
+
+  
+    <div class="summary">
+      <b>javascript</b> 검색 결과: 총 18개
+    </div>
+
+    
+      <section class="source">
+        <h2>Berlin Startup Jobs (2)</h2>
+
+        
+          
+            <div class="job">
+              <h3>
+                <a href="https://berlinstartupjobs.com/engineering/senior-backend-developer-golang-m-f-d-datatroniq/" target="_blank" rel="noopener noreferrer">
+                  Senior Backend Developer – Go &amp; Kubernetes
+                </a>
+              </h3>
+              <p>회사: DATATRONiQ</p>
+              <p>지역: Berlin</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://berlinstartupjobs.com/engineering/senior-fullstack-developer-typescript-javascript-node-js-datatroniq/" target="_blank" rel="noopener noreferrer">
+                  Senior Frontend Developer – TypeScript, React &amp; Design-Gespür
+                </a>
+              </h3>
+              <p>회사: DATATRONiQ</p>
+              <p>지역: Berlin</p>
+            </div>
+          
+        
+      </section>
+    
+      <section class="source">
+        <h2>We Work Remotely (1)</h2>
+
+        
+          
+            <div class="job">
+              <h3>
+                <a href="https://weworkremotely.com/remote-jobs/confiz-full-stack-engineer-lv-4-java-javascript" target="_blank" rel="noopener noreferrer">
+                  Full Stack Engineer - Lv 4 / Java + JavaScript
+                </a>
+              </h3>
+              <p>회사: Confiz</p>
+              <p>지역: Full-Time</p>
+            </div>
+          
+        
+      </section>
+    
+      <section class="source">
+        <h2>Web3 Career (15)</h2>
+
+        
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/blockchain-architect-and-developer-techobserver/152682" target="_blank" rel="noopener noreferrer">
+                  Blockchain Architect and Developer
+                </a>
+              </h3>
+              <p>회사: Tech Observer</p>
+              <p>지역: Jersey City , NJ , United States</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/p2p-node-js-engineer-holepunch-100-remote-worldwide-tetheroperationslimited/152589" target="_blank" rel="noopener noreferrer">
+                  P2P Node.js Engineer Holepunch 100% Remote Worldwide
+                </a>
+              </h3>
+              <p>회사: Tether Operations Limited</p>
+              <p>지역: Barcelona , Spain</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/senior-node-js-software-engineer-holepunch-100-remote-worldwide-tetheroperationslimited/152588" target="_blank" rel="noopener noreferrer">
+                  Senior Node.js Software Engineer Holepunch 100% Remote Worldwide
+                </a>
+              </h3>
+              <p>회사: Tether Operations Limited</p>
+              <p>지역: Barcelona , Spain</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/software-engineer-react-bitpanda-broker-bitpanda/151991" target="_blank" rel="noopener noreferrer">
+                  Software Engineer React Bitpanda Broker
+                </a>
+              </h3>
+              <p>회사: Bitpanda</p>
+              <p>지역: Remote</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/senior-business-it-engineer-atlassian-cloud-bitpanda/152342" target="_blank" rel="noopener noreferrer">
+                  Senior Business IT Engineer Atlassian Cloud
+                </a>
+              </h3>
+              <p>회사: Bitpanda</p>
+              <p>지역: Remote</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/front-end-engineer-institutional-blockchain/98051" target="_blank" rel="noopener noreferrer">
+                  FrontEnd Engineer Institutional
+                </a>
+              </h3>
+              <p>회사: Blockchain</p>
+              <p>지역: Remote</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/ui-engineer-taxbit/151184" target="_blank" rel="noopener noreferrer">
+                  UI Engineer
+                </a>
+              </h3>
+              <p>회사: Taxbit</p>
+              <p>지역: Remote</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/quality-assurance-engineer-brave/46151" target="_blank" rel="noopener noreferrer">
+                  Quality Assurance Engineer
+                </a>
+              </h3>
+              <p>회사: Brave</p>
+              <p>지역: San Francisco , CA , United States</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/solutions-engineer-bitgo/149986" target="_blank" rel="noopener noreferrer">
+                  Solutions Engineer
+                </a>
+              </h3>
+              <p>회사: Bitgo</p>
+              <p>지역: Remote</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/senior-security-engineer-product-security-ondofinance/152420" target="_blank" rel="noopener noreferrer">
+                  Senior Security Engineer Product Security
+                </a>
+              </h3>
+              <p>회사: Ondo Finance</p>
+              <p>지역: United States</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/senior-web3-sdet-r3/152390" target="_blank" rel="noopener noreferrer">
+                  Senior Web3 SDET
+                </a>
+              </h3>
+              <p>회사: R3</p>
+              <p>지역: Mumbai , India</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/vice-president-defi-product-engineer-fidelityinvestments/152323" target="_blank" rel="noopener noreferrer">
+                  Vice President DeFi Product Engineer
+                </a>
+              </h3>
+              <p>회사: Fidelity Investments</p>
+              <p>지역: Boston , MA , United States</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/product-engineer-improbable/152268" target="_blank" rel="noopener noreferrer">
+                  Product Engineer
+                </a>
+              </h3>
+              <p>회사: Improbable</p>
+              <p>지역: United Kingdom</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/sdr-sdr-brave-search-api-brave/152247" target="_blank" rel="noopener noreferrer">
+                  SDR SDR Brave Search API
+                </a>
+              </h3>
+              <p>회사: Brave</p>
+              <p>지역: Remote</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/senior-blockchain-engineer-with-payment-and-exchange-building-experience-y-axisglobal/152233" target="_blank" rel="noopener noreferrer">
+                  Senior Blockchain Engineer With Payment And Exchange Building Experience
+                </a>
+              </h3>
+              <p>회사: Y-axis Global</p>
+              <p>지역: Santa Monica , CA , United States</p>
+            </div>
+          
+        
+      </section>
+    
+  
+</body>
+</html>

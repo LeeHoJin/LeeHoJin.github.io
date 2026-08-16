@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Search</title>
+  <style>
+    body {
+      width: 80%;
+      max-width: 900px;
+      margin: 40px auto;
+      color: #333;
+      font-family: Arial, sans-serif;
+    }
+
+    form {
+      margin: 25px 0;
+    }
+
+    input {
+      width: 60%;
+      padding: 10px;
+      border: 1px solid #aaa;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 11px 20px;
+      border: 0;
+      background-color: #198754;
+      color: white;
+      cursor: pointer;
+    }
+
+    .summary {
+      margin: 30px 0;
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+
+    .source {
+      margin-top: 35px;
+    }
+
+    .source h2 {
+      padding-bottom: 8px;
+      border-bottom: 2px solid #198754;
+      font-size: 21px;
+    }
+
+    .job {
+      padding: 15px 5px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .job h3 {
+      margin: 0 0 8px;
+      font-size: 17px;
+    }
+
+    .job p {
+      margin: 4px 0;
+      color: #666;
+      font-size: 14px;
+    }
+
+    a {
+      color: #0066cc;
+    }
+
+    .error {
+      color: #cc0000;
+    }
+  </style>
+</head>
+<body>
+  <h1>Job Search</h1>
+  <p>Berlin Startup Jobs, We Work Remotely, Web3 Career의 채용 공고를 검색합니다.</p>
+
+  <form
+    onsubmit="event.preventDefault(); window.location.href='/search/' + encodeURIComponent(this.term.value.toLowerCase().trim()) + '/';"
+  >
+    <input
+      type="text"
+      name="term"
+      value="java"
+      placeholder="python, javascript, java"
+      required
+    >
+    <button type="submit">검색</button>
+  </form>
+
+  
+
+  
+    <div class="summary">
+      <b>java</b> 검색 결과: 총 20개
+    </div>
+
+    
+      <section class="source">
+        <h2>Berlin Startup Jobs (1)</h2>
+
+        
+          
+            <div class="job">
+              <h3>
+                <a href="https://berlinstartupjobs.com/engineering/senior-fullstack-developer-with-product-mindset-small-improvements/" target="_blank" rel="noopener noreferrer">
+                  Senior Fullstack Developer with Product Mindset
+                </a>
+              </h3>
+              <p>회사: Small Improvements</p>
+              <p>지역: Berlin</p>
+            </div>
+          
+        
+      </section>
+    
+      <section class="source">
+        <h2>We Work Remotely (4)</h2>
+
+        
+          
+            <div class="job">
+              <h3>
+                <a href="https://weworkremotely.com/remote-jobs/esm-intermediate-web-applications-developer-java-aws-remote" target="_blank" rel="noopener noreferrer">
+                  Intermediate Web Applications Developer - JAVA/AWS (Remote)
+                </a>
+              </h3>
+              <p>회사: ESM</p>
+              <p>지역: Anywhere in the World</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://weworkremotely.com/remote-jobs/azumo-java-engineer-latin-america" target="_blank" rel="noopener noreferrer">
+                  Java Engineer - Latin America
+                </a>
+              </h3>
+              <p>회사: Azumo</p>
+              <p>지역: Anywhere in the World</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://weworkremotely.com/remote-jobs/confiz-full-stack-engineer-lv-4-java-javascript" target="_blank" rel="noopener noreferrer">
+                  Full Stack Engineer - Lv 4 / Java + JavaScript
+                </a>
+              </h3>
+              <p>회사: Confiz</p>
+              <p>지역: Full-Time</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://weworkremotely.com/remote-jobs/toptal-senior-java-developer-microservices-spring-remote" target="_blank" rel="noopener noreferrer">
+                  Senior Java Developer — Microservices &amp; Spring | Remote
+                </a>
+              </h3>
+              <p>회사: Toptal</p>
+              <p>지역: 🇺🇸 United States of America</p>
+            </div>
+          
+        
+      </section>
+    
+      <section class="source">
+        <h2>Web3 Career (15)</h2>
+
+        
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/full-stack-engineer-kyc-tech-fully-remote-binance/152687" target="_blank" rel="noopener noreferrer">
+                  Full Stack Engineer KYC Tech fully remote!
+                </a>
+              </h3>
+              <p>회사: Binance</p>
+              <p>지역: Taipei , Taiwan</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/blockchain-architect-and-developer-techobserver/152682" target="_blank" rel="noopener noreferrer">
+                  Blockchain Architect and Developer
+                </a>
+              </h3>
+              <p>회사: Tech Observer</p>
+              <p>지역: Jersey City , NJ , United States</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/blockchain-crypto-engineer-irissoftwareinc/152680" target="_blank" rel="noopener noreferrer">
+                  Blockchain Crypto Engineer
+                </a>
+              </h3>
+              <p>회사: Iris Software Inc.</p>
+              <p>지역: Austin , TX , United States</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/blockchain-web3-java-engineer-digital-assets-platform-vp-citi/152620" target="_blank" rel="noopener noreferrer">
+                  Blockchain Web3 Java Engineer Digital Assets Platm VP
+                </a>
+              </h3>
+              <p>회사: Citi</p>
+              <p>지역: New York , NY , United States</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/blockchain-developer-i8is-infinitisoftwaresolutions/152619" target="_blank" rel="noopener noreferrer">
+                  Blockchain Developer
+                </a>
+              </h3>
+              <p>회사: I8IS - Infiniti Software Solutions</p>
+              <p>지역: Jersey City , NJ , United States</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/blockchain-web3-engineer-irissoftwareinc/152618" target="_blank" rel="noopener noreferrer">
+                  Blockchain Web3 Engineer
+                </a>
+              </h3>
+              <p>회사: Iris Software Inc.</p>
+              <p>지역: Austin , TX , United States</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/blockchain-architect-i8is-infinitisoftwaresolutions/152617" target="_blank" rel="noopener noreferrer">
+                  Blockchain Architect
+                </a>
+              </h3>
+              <p>회사: I8IS - Infiniti Software Solutions</p>
+              <p>지역: Jersey City , NJ , United States</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/blockchain-developer-blockchain-developer-lead-java-wisehead/152581" target="_blank" rel="noopener noreferrer">
+                  Blockchain Developer Blockchain Developer Lead Java
+                </a>
+              </h3>
+              <p>회사: Wisehead</p>
+              <p>지역: United States</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/staff-site-reliability-engineer-zscaler/106117" target="_blank" rel="noopener noreferrer">
+                  Staff Site Reliability Engineer
+                </a>
+              </h3>
+              <p>회사: Zscaler</p>
+              <p>지역: Remote</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/principal-staff-engineer-compliance-okx/149565" target="_blank" rel="noopener noreferrer">
+                  Principal Staff Engineer Compliance
+                </a>
+              </h3>
+              <p>회사: Okx</p>
+              <p>지역: Remote</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/software-engineer-java-trade-services-bitpanda/151990" target="_blank" rel="noopener noreferrer">
+                  Software Engineer Java Trade Services
+                </a>
+              </h3>
+              <p>회사: Bitpanda</p>
+              <p>지역: Remote</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/software-engineer-java-digital-asset-systems-bitpanda/149242" target="_blank" rel="noopener noreferrer">
+                  Software Engineer Java Digital Asset Systems
+                </a>
+              </h3>
+              <p>회사: Bitpanda</p>
+              <p>지역: Remote</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/senior-software-engineer-java-evergreen-bitpanda/152263" target="_blank" rel="noopener noreferrer">
+                  Senior Software Engineer Java EVERGREEN
+                </a>
+              </h3>
+              <p>회사: Bitpanda</p>
+              <p>지역: Remote</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/senior-software-engineer-trading-alpaca/99659" target="_blank" rel="noopener noreferrer">
+                  Senior Software Engineer Trading
+                </a>
+              </h3>
+              <p>회사: Alpaca</p>
+              <p>지역: Remote</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/java-backend-developer-localcoin/78924" target="_blank" rel="noopener noreferrer">
+                  Java Backend Developer
+                </a>
+              </h3>
+              <p>회사: Localcoin</p>
+              <p>지역: Toronto , Canada</p>
+            </div>
+          
+        
+      </section>
+    
+  
+</body>
+</html>

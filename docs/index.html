@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Search</title>
+  <style>
+    body {
+      width: 80%;
+      max-width: 900px;
+      margin: 40px auto;
+      color: #333;
+      font-family: Arial, sans-serif;
+    }
+
+    form {
+      margin: 25px 0;
+    }
+
+    input {
+      width: 60%;
+      padding: 10px;
+      border: 1px solid #aaa;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 11px 20px;
+      border: 0;
+      background-color: #198754;
+      color: white;
+      cursor: pointer;
+    }
+
+    .summary {
+      margin: 30px 0;
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+
+    .source {
+      margin-top: 35px;
+    }
+
+    .source h2 {
+      padding-bottom: 8px;
+      border-bottom: 2px solid #198754;
+      font-size: 21px;
+    }
+
+    .job {
+      padding: 15px 5px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .job h3 {
+      margin: 0 0 8px;
+      font-size: 17px;
+    }
+
+    .job p {
+      margin: 4px 0;
+      color: #666;
+      font-size: 14px;
+    }
+
+    a {
+      color: #0066cc;
+    }
+
+    .error {
+      color: #cc0000;
+    }
+  </style>
+</head>
+<body>
+  <h1>Job Search</h1>
+  <p>Berlin Startup Jobs, We Work Remotely, Web3 Career의 채용 공고를 검색합니다.</p>
+
+  <form
+    onsubmit="event.preventDefault(); window.location.href='/search/' + encodeURIComponent(this.term.value.toLowerCase().trim()) + '/';"
+  >
+    <input
+      type="text"
+      name="term"
+      value=""
+      placeholder="python, javascript, java"
+      required
+    >
+    <button type="submit">검색</button>
+  </form>
+
+  
+
+  
+    <p>검색어를 입력해 주세요.</p>
+  
+</body>
+</html>

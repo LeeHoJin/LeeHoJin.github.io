@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Search</title>
+  <style>
+    body {
+      width: 80%;
+      max-width: 900px;
+      margin: 40px auto;
+      color: #333;
+      font-family: Arial, sans-serif;
+    }
+
+    form {
+      margin: 25px 0;
+    }
+
+    input {
+      width: 60%;
+      padding: 10px;
+      border: 1px solid #aaa;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 11px 20px;
+      border: 0;
+      background-color: #198754;
+      color: white;
+      cursor: pointer;
+    }
+
+    .summary {
+      margin: 30px 0;
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+
+    .source {
+      margin-top: 35px;
+    }
+
+    .source h2 {
+      padding-bottom: 8px;
+      border-bottom: 2px solid #198754;
+      font-size: 21px;
+    }
+
+    .job {
+      padding: 15px 5px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .job h3 {
+      margin: 0 0 8px;
+      font-size: 17px;
+    }
+
+    .job p {
+      margin: 4px 0;
+      color: #666;
+      font-size: 14px;
+    }
+
+    a {
+      color: #0066cc;
+    }
+
+    .error {
+      color: #cc0000;
+    }
+  </style>
+</head>
+<body>
+  <h1>Job Search</h1>
+  <p>Berlin Startup Jobs, We Work Remotely, Web3 Career의 채용 공고를 검색합니다.</p>
+
+  <form
+    onsubmit="event.preventDefault(); window.location.href='/search/' + encodeURIComponent(this.term.value.toLowerCase().trim()) + '/';"
+  >
+    <input
+      type="text"
+      name="term"
+      value="python"
+      placeholder="python, javascript, java"
+      required
+    >
+    <button type="submit">검색</button>
+  </form>
+
+  
+
+  
+    <div class="summary">
+      <b>python</b> 검색 결과: 총 26개
+    </div>
+
+    
+      <section class="source">
+        <h2>Berlin Startup Jobs (5)</h2>
+
+        
+          
+            <div class="job">
+              <h3>
+                <a href="https://berlinstartupjobs.com/engineering/senior-backend-developer-golang-m-f-d-datatroniq/" target="_blank" rel="noopener noreferrer">
+                  Senior Backend Developer – Go &amp; Kubernetes
+                </a>
+              </h3>
+              <p>회사: DATATRONiQ</p>
+              <p>지역: Berlin</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://berlinstartupjobs.com/engineering/senior-data-scientist-datatroniq/" target="_blank" rel="noopener noreferrer">
+                  Senior Data Scientist – Python, ML &amp; Signal-Processing
+                </a>
+              </h3>
+              <p>회사: DATATRONiQ</p>
+              <p>지역: Berlin</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://berlinstartupjobs.com/engineering/senior-fullstack-developer-typescript-javascript-node-js-datatroniq/" target="_blank" rel="noopener noreferrer">
+                  Senior Frontend Developer – TypeScript, React &amp; Design-Gespür
+                </a>
+              </h3>
+              <p>회사: DATATRONiQ</p>
+              <p>지역: Berlin</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://berlinstartupjobs.com/engineering/django-software-entwicklerin-m-w-d-sourcecast/" target="_blank" rel="noopener noreferrer">
+                  Django Software-Entwickler:in (m/w/d)
+                </a>
+              </h3>
+              <p>회사: Sourcecast</p>
+              <p>지역: Berlin</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://berlinstartupjobs.com/engineering/senior-full-stack-developer-data-scientist-remote-friendly-aidar/" target="_blank" rel="noopener noreferrer">
+                  Senior Full-Stack Developer / Data Scientist (remote-friendly)
+                </a>
+              </h3>
+              <p>회사: AIDAR</p>
+              <p>지역: Berlin</p>
+            </div>
+          
+        
+      </section>
+    
+      <section class="source">
+        <h2>We Work Remotely (6)</h2>
+
+        
+          
+            <div class="job">
+              <h3>
+                <a href="https://weworkremotely.com/remote-jobs/toptal-python-backend-development-talent-with-rag-and-agentic-ai-experience" target="_blank" rel="noopener noreferrer">
+                  Python Backend Development Talent with RAG and Agentic AI Experience
+                </a>
+              </h3>
+              <p>회사: Toptal</p>
+              <p>지역: Asia Only</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://weworkremotely.com/remote-jobs/proxify-ab-senior-fullstack-developer-python-3" target="_blank" rel="noopener noreferrer">
+                  Senior Fullstack Developer (Python)
+                </a>
+              </h3>
+              <p>회사: Proxify AB</p>
+              <p>지역: Anywhere in the World</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://weworkremotely.com/remote-jobs/proxify-ab-senior-backend-developer-python-9" target="_blank" rel="noopener noreferrer">
+                  Senior Backend Developer (Python)
+                </a>
+              </h3>
+              <p>회사: Proxify AB</p>
+              <p>지역: Anywhere in the World</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://weworkremotely.com/remote-jobs/proxify-ab-senior-data-engineer-python-1" target="_blank" rel="noopener noreferrer">
+                  Senior Data Engineer (Python)
+                </a>
+              </h3>
+              <p>회사: Proxify AB</p>
+              <p>지역: Anywhere in the World</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://weworkremotely.com/remote-jobs/toptal-devops-engineer-python" target="_blank" rel="noopener noreferrer">
+                  DevOps Engineer (Python)
+                </a>
+              </h3>
+              <p>회사: Toptal</p>
+              <p>지역: 🇺🇾 Uruguay</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://weworkremotely.com/remote-jobs/toptal-full-stack-engineer-python-temporal-remote-latam-europe" target="_blank" rel="noopener noreferrer">
+                  Full-Stack Engineer (Python + Temporal) | Remote | LATAM &amp; Europe
+                </a>
+              </h3>
+              <p>회사: Toptal</p>
+              <p>지역: Anywhere in the World</p>
+            </div>
+          
+        
+      </section>
+    
+      <section class="source">
+        <h2>Web3 Career (15)</h2>
+
+        
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/software-engineer-rust-python-asset-pricing-hedging-bitpanda/150010" target="_blank" rel="noopener noreferrer">
+                  Software Engineer Rust Python Asset Pricing Hedging
+                </a>
+              </h3>
+              <p>회사: Bitpanda</p>
+              <p>지역: Remote</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/python-engineer-asset-pricing-hedging-bitpanda/103283" target="_blank" rel="noopener noreferrer">
+                  Python Engineer Asset Pricing Hedging
+                </a>
+              </h3>
+              <p>회사: Bitpanda</p>
+              <p>지역: Remote</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/software-engineer-python-asset-pricing-hedging-bitpanda/149554" target="_blank" rel="noopener noreferrer">
+                  Software Engineer Python Asset Pricing Hedging
+                </a>
+              </h3>
+              <p>회사: Bitpanda</p>
+              <p>지역: Remote</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/senior-qa-engineer-exploratory-python-trading-technologies-binance/150664" target="_blank" rel="noopener noreferrer">
+                  Senior QA Engineer Exploratory Python Trading Technologies
+                </a>
+              </h3>
+              <p>회사: Binance</p>
+              <p>지역: Tokyo , Japan</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/senior-software-development-engineer-in-test-automation-python-trading-technologies-binance/150607" target="_blank" rel="noopener noreferrer">
+                  Senior Software Development Engineer in Test Automation Python Trading Technologies
+                </a>
+              </h3>
+              <p>회사: Binance</p>
+              <p>지역: Tokyo , Japan</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/it-junior-python-developer-london-b2c2/144971" target="_blank" rel="noopener noreferrer">
+                  IT Junior Python Developer London
+                </a>
+              </h3>
+              <p>회사: B2c2</p>
+              <p>지역: Remote</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/senior-software-engineer-python-asset-pricing-hedging-bitpanda/101436" target="_blank" rel="noopener noreferrer">
+                  Senior Software Engineer Python Asset Pricing Hedging
+                </a>
+              </h3>
+              <p>회사: Bitpanda</p>
+              <p>지역: Remote</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/software-developer-python-dv-equities-dvtrading/149355" target="_blank" rel="noopener noreferrer">
+                  Software Developer Python DV Equities
+                </a>
+              </h3>
+              <p>회사: Dvtrading</p>
+              <p>지역: Remote</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/senior-solutions-engineer-api-python-node-js-binance/148589" target="_blank" rel="noopener noreferrer">
+                  Senior Solutions Engineer API Python Node.JS
+                </a>
+              </h3>
+              <p>회사: Binance</p>
+              <p>지역: Buenos Aires , Argentina</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/senior-api-solutions-engineer-python-node-js-binance/146936" target="_blank" rel="noopener noreferrer">
+                  Senior API Solutions Engineer Python Node.JS
+                </a>
+              </h3>
+              <p>회사: Binance</p>
+              <p>지역: Buenos Aires , Argentina</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/jr-mid-python-developer-accounting-team-b2c2/138510" target="_blank" rel="noopener noreferrer">
+                  JrMid Python Developer Accounting Team
+                </a>
+              </h3>
+              <p>회사: B2c2</p>
+              <p>지역: Remote</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/lead-python-developer-defi-infrastructure-connecthum/145672" target="_blank" rel="noopener noreferrer">
+                  Lead Python Developer DeFi Infrastructure
+                </a>
+              </h3>
+              <p>회사: ConnectHum</p>
+              <p>지역: Remote</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/security-engineer-python-binance/144925" target="_blank" rel="noopener noreferrer">
+                  Security Engineer Python
+                </a>
+              </h3>
+              <p>회사: Binance</p>
+              <p>지역: Sofia , Bulgaria</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/principal-software-engineer-backend-python-golang-zscaler/143950" target="_blank" rel="noopener noreferrer">
+                  Principal Software Engineer Backend Python Golang
+                </a>
+              </h3>
+              <p>회사: Zscaler</p>
+              <p>지역: Remote</p>
+            </div>
+          
+            <div class="job">
+              <h3>
+                <a href="https://web3.career/software-engineer-python-institutional-blockchain/143870" target="_blank" rel="noopener noreferrer">
+                  Software Engineer Python Institutional
+                </a>
+              </h3>
+              <p>회사: Blockchain</p>
+              <p>지역: Remote</p>
+            </div>
+          
+        
+      </section>
+    
+  
+</body>
+</html>
